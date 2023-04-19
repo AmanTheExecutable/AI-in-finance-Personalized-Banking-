@@ -99,7 +99,10 @@ public:
 
 int main()
 {
-    BankAccount myAccount("1234567890", "John Doe", 1000.00);
+    string account_no, name;
+    int balance;
+    cin >> account_no >> name >> balance;
+    BankAccount myAccount(account_no, name, balance);
 
     cout << "Account details:" << endl;
     cout << "Account number: " << myAccount.getAccountNumber() << endl;
